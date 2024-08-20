@@ -1,0 +1,82 @@
+/* DONT DELETE THIS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+/* WRITE YOUR CODE BELOW */
+
+body {
+  height: 100vh;
+  background-color: #6bbcbe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes superCoinFlip {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.animation-group__circle {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: superCoinFlip 1s ease-in-out infinite;
+}
+
+.animation-group__circle div {
+  background-color: white;
+  border-radius: 100%;
+  margin: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+@keyframes scaleBounce {
+  0%,
+  50%,
+  100% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1.8);
+  }
+}
+
+.animation-group__square {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-group__square div {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  margin: 3px;
+  animation: scaleBounce 1s ease-in-out infinite;
+}
+
+.animation-group__square div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.animation-group__square div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.animation-group__square div:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.animation-group__square div:nth-child(5) {
+  animation-delay: 0.4s;
+}
